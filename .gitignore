@@ -1,0 +1,346 @@
+## =========================================================
+## MASTER .gitignore
+## Covers: .NET / Visual Studio, Unity, Node/Web, Docker, Python
+## Sources: https://github.com/github/gitignore
+## =========================================================
+
+########################
+# VISUAL STUDIO / .NET #
+########################
+
+# User-specific
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+secrets.json
+
+# Mono auto-generated
+mono_crash.*
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+[Ll]og/
+[Ll]ogs/
+bld/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]*/   # covers ARM, ARM64, ARM64EC
+
+# VS cache/options
+.vs/
+Generated\ Files/
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.trx
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Coverage
+coverage*
+*.coverage
+*.coveragexml
+
+# BenchmarkDotNet
+BenchmarkDotNet.Artifacts/
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# StyleCop
+StyleCopReport.xml
+
+# Debug/build artifacts
+*.obj
+*.pdb
+*.idb
+*.tlog
+*.ilk
+*.pch
+*.ipdb
+*.iobj
+*.log
+
+# VS profiler / trace
+*.psess
+*.vsp*
+*.sap
+*.e2e
+
+# TFS / VCS
+$tf/
+*.vspscc
+*.vssscc
+*.scc
+
+# JetBrains Rider / ReSharper
+_ReSharper*/
+*.DotSettings.user
+.idea/
+*.iml
+*.dotCover
+
+# NCrunch
+_NCrunch_*
+nCrunchTemp_*
+
+# Other VS add-ins
+.axoCover/
+*.mm.*
+AutoTest.Net/
+.sass-cache/
+*.pfx
+*.publishsettings
+
+# NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+
+# Azure
+PublishScripts/
+*.azurePubxml
+*.pubxml
+*.publishproj
+csx/
+ecf/
+rcf/
+
+# SQL Server
+*.mdf
+*.ldf
+*.ndf
+
+# Misc VS
+*.dbmdl
+*.svclog
+*.rptproj.bak
+*.GhostDoc.xml
+
+# Entity Framework
+*_ModelSnapshot.cs
+
+# Swagger / API docs
+swagger.json
+swagger.yaml
+
+
+##############
+# JAVASCRIPT #
+##############
+
+# Node / package managers
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.pnp.*
+.pnp.js
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+report.[0-9]*.json
+
+# Build / coverage
+dist/
+build/
+coverage/
+*.lcov
+.nyc_output
+.cache
+.parcel-cache
+.cache-loader
+
+# Frameworks
+.next/
+out/
+.nuxt/
+.vuepress/dist
+.svelte-kit/
+.docusaurus
+.angular/
+.angular-cli.json
+.e2e/test-output/
+.vitepress/*
+jspm_packages/
+web_modules/
+storybook-static/
+.storybook-out/
+
+# Config caches
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# Misc
+.DS_Store
+*.pem
+.vercel
+.next-env.d.ts
+
+
+###########
+#   UNITY #
+###########
+
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild*/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+Recordings/
+sysinfo.txt
+
+# Unity assets
+*.blend1
+*.blend1.meta
+*.pidb
+*.pdb
+*.mdb
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Rider
+/[Aa]ssets/Plugins/Editor/JetBrains*
+*.DotSettings.user
+
+# Crashlytics
+crashlytics-build.properties
+
+# Unity builds
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# Test runner
+InitTestScene*.unity*
+
+# Addressables
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
+/[Aa]ssets/Addressables_Temp*
+
+# Visual Scripting
+/[Aa]ssets/Unity.VisualScripting.Generated/
+
+# Unity VCS
+.plastic/
+.collabignore
+
+
+############
+#   PYTHON #
+############
+
+# Virtual envs
+venv/
+ENV/
+env/
+.venv/
+env.bak/
+venv.bak/
+
+# Bytecode / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Test / coverage
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+.tox/
+.nox/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+
+##############
+#   DOCKER   #
+##############
+
+# Docker files / overrides
+docker-compose.override.yml
+docker-compose*.local.yml
+.docker/
+.dockerignore
+Dockerfile.*.bak
+
+# Local volumes
+**/volumes/
+**/data/
+**/tmp/
+**/mnt/
+
+# Kubernetes / Helm
+*.tgz
+charts/**/charts
+charts/**/tmp
+
+
+##################
+#   MISC / OS    #
+##################
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Backup / temp
+*.tmp
+*.bak
+*.swp
